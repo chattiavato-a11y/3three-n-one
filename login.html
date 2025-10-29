@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Secure Login • 3Three-N-One</title>
+    <meta
+      name="description"
+      content="Authenticate to access the 3Three-N-One administrative and logistics workspaces."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="navbar" role="navigation" aria-label="Primary">
+        <nav>
+          <a href="index.html">Overview</a>
+          <a href="consumer.html">End Consumer</a>
+          <div class="nav-cluster" data-nav-cluster>
+            <button
+              class="nav-trigger"
+              type="button"
+              data-menu-trigger
+              aria-expanded="false"
+              aria-controls="admin-menu"
+              aria-haspopup="true"
+              data-current="true"
+            >
+              Admin
+              <span class="nav-trigger-icon" aria-hidden="true"></span>
+            </button>
+            <div class="nav-menu-panel" id="admin-menu" role="menu" hidden data-menu-panel>
+              <div class="nav-menu-columns">
+                <div class="nav-menu-column">
+                  <button
+                    class="nav-subtrigger"
+                    type="button"
+                    data-submenu-trigger
+                    aria-expanded="false"
+                    aria-controls="admin-business"
+                  >
+                    Business
+                  </button>
+                  <div class="nav-submenu" id="admin-business" role="menu" hidden>
+                    <a class="nav-submenu-link" href="login.html" role="menuitem" aria-current="page">Business Ops</a>
+                  </div>
+                </div>
+                <div class="nav-menu-column">
+                  <button
+                    class="nav-subtrigger"
+                    type="button"
+                    data-submenu-trigger
+                    aria-expanded="false"
+                    aria-controls="admin-logistics"
+                  >
+                    Logistics
+                  </button>
+                  <div class="nav-submenu" id="admin-logistics" role="menu" hidden>
+                    <a class="nav-submenu-link" href="login.html" role="menuitem" aria-current="page">Contractor</a>
+                    <a class="nav-submenu-link" href="login.html" role="menuitem" aria-current="page">Business Ops</a>
+                  </div>
+                </div>
+              </div>
+              <p class="nav-helper">All admin pathways direct to the secure login.</p>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="login">
+      <section class="login-card" aria-labelledby="login-title">
+        <h1 id="login-title">Secure workspace access</h1>
+        <p class="login-intro">
+          Sign in with your assigned credentials to continue to the 3Three-N-One
+          administrative console.
+        </p>
+        <form class="login-form" action="#" method="post">
+          <label class="login-label" for="email">Work email</label>
+          <input class="login-input" type="email" id="email" name="email" required />
+
+          <label class="login-label" for="password">Password</label>
+          <input
+            class="login-input"
+            type="password"
+            id="password"
+            name="password"
+            minlength="8"
+            required
+            aria-describedby="password-help"
+          />
+          <p id="password-help" class="login-help">
+            Minimum 8 characters with multi-factor authentication enforced post-login.
+          </p>
+
+          <button class="button primary login-button" type="submit">Log in</button>
+          <a class="login-link" href="#">Need access? Request provisioning</a>
+        </form>
+      </section>
+    </main>
+    <script src="scripts.js" defer></script>
+  </body>
+</html>
