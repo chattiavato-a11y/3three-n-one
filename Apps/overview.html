@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>3Three-N-One Commerce Cloud</title>
+    <title>Marxia Commerce Cloud</title>
     <meta
       name="description"
-      content="Unified e-commerce platform connecting consumers, business owners, logistics, and IT operations with Flutter and Firebase readiness."
+      content="Unified ecommerce platform connecting consumers, business owners, and logistics teams with resilient, secure app experiences."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,14 +14,14 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="../styles.css" />
   </head>
   <body>
     <header>
       <div class="navbar" role="navigation" aria-label="Primary">
         <nav>
-          <a href="index.html" aria-current="page">Overview</a>
-          <a href="consumer.html">End Consumer</a>
+          <a href="overview.html" aria-current="page">Overview</a>
+          <a href="consumer.html">Consumer App</a>
           <div class="nav-cluster" data-nav-cluster>
             <button
               class="nav-trigger"
@@ -47,7 +47,7 @@
                     Business
                   </button>
                   <div class="nav-submenu" id="admin-business" role="menu" hidden>
-                    <a class="nav-submenu-link" href="login.html" role="menuitem">Business Ops</a>
+                    <a class="nav-submenu-link" href="../login.html" role="menuitem">Business Ops</a>
                   </div>
                 </div>
                 <div class="nav-menu-column">
@@ -61,8 +61,8 @@
                     Logistics
                   </button>
                   <div class="nav-submenu" id="admin-logistics" role="menu" hidden>
-                    <a class="nav-submenu-link" href="login.html" role="menuitem">Contractor</a>
-                    <a class="nav-submenu-link" href="login.html" role="menuitem">Business Ops</a>
+                    <a class="nav-submenu-link" href="../login.html" role="menuitem">Contractor</a>
+                    <a class="nav-submenu-link" href="../login.html" role="menuitem">Business Ops</a>
                   </div>
                 </div>
               </div>
@@ -79,14 +79,12 @@
           <span class="tag">Unified Ecommerce Operating System</span>
           <h2>Composable commerce for every stakeholder.</h2>
           <p>
-            3Three-N-One delivers a secure, Flutter &amp; Firebase-ready ecommerce
-            ecosystem that delights consumers, empowers business owners, keeps
-            logistics synchronized, and equips IT to orchestrate continuous
-            improvement across Android, iOS, and the web.
+            Marxia delivers a secure, adaptable commerce ecosystem that delights consumers, empowers business owners, keeps
+            logistics synchronized, and equips teams to orchestrate continuous improvement across Android, iOS, and the web.
           </p>
           <div class="button-group">
             <a class="button primary" href="consumer.html">Explore consumer journey</a>
-            <a class="button secondary" href="it-ops.html">View ops command center</a>
+            <a class="button secondary" href="../business-admin.html">View business console</a>
           </div>
         </div>
       </section>
@@ -94,21 +92,20 @@
       <section class="section" id="roles">
         <h2>Role-tailored landing experiences</h2>
         <p>
-          Each workspace is designed for its audience while sharing a common
-          secure backbone, ensuring consistent compliance with NIST, PCI DSS,
-          and CISA-aligned safeguards.
+          Each workspace is designed for its audience while sharing a common secure backbone, ensuring consistent governance
+          and user confidence.
         </p>
         <div class="grid cards-3">
           <article class="card">
-            <h3>End Consumer</h3>
+            <h3>Consumer App</h3>
             <p>
-              Shop across curated inventories, enjoy adaptive recommendations,
-              and check out with PCI-ready payments on any device.
+              Discover curated inventories, receive adaptive recommendations, and stay in control of every order with
+              responsive support.
             </p>
             <ul class="feature-list">
-              <li>Seamless Android, iOS, and PWA experiences</li>
-              <li>Real-time inventory insights powered by Firebase</li>
-              <li>Secure wallets, multi-factor checkout, and order tracking</li>
+              <li>Immersive Android, iOS, and PWA experiences</li>
+              <li>Inventory and pricing visibility updated in real time</li>
+              <li>Secure wallets, MFA checkout, and proactive notifications</li>
             </ul>
             <div class="button-group" style="margin-top: 1.5rem">
               <a class="button primary" href="consumer.html">Open consumer hub</a>
@@ -117,8 +114,8 @@
           <article class="card">
             <h3>Business Admin</h3>
             <p>
-              Monitor purchases, sales inventory, tax positions, and orchestrate
-              pricing or promotions with granular role-based access control.
+              Monitor purchases, sales inventory, tax positions, and orchestrate pricing or promotions with granular
+              role-based access control.
             </p>
             <ul class="feature-list">
               <li>Inventory pipeline snapshots &amp; margin dashboards</li>
@@ -126,60 +123,48 @@
               <li>Approval workflows aligned to least-privilege policies</li>
             </ul>
             <div class="button-group" style="margin-top: 1.5rem">
-              <a class="button primary" href="business-admin.html">Open business console</a>
+              <a class="button primary" href="../business-admin.html">Open business console</a>
             </div>
           </article>
           <article class="card">
             <h3>Logistics &amp; IT</h3>
             <p>
-              Keep shipments, drivers, and digital operations in sync with
-              intelligent routing, telemetry, and observability controls.
+              Keep shipments, drivers, and digital operations in sync with intelligent routing, telemetry, and observability
+              controls.
             </p>
             <ul class="feature-list">
               <li>Driver dispatch tooling with compliance-ready checklists</li>
               <li>Predictive route analytics and handoff transparency</li>
-              <li>IT oversight with incident response &amp; release governance</li>
+              <li>Operations oversight with incident response governance</li>
             </ul>
             <div class="button-group" style="margin-top: 1.5rem">
-              <a class="button primary" href="logistics-admin.html">Logistics admin</a>
-              <a class="button secondary" href="it-ops.html">IT command</a>
+              <a class="button primary" href="../logistics-admin.html">Logistics admin</a>
             </div>
           </article>
         </div>
       </section>
 
       <section class="section">
-        <h2>Built for Flutter, Firebase, and secure scale</h2>
+        <h2>Built for Secure scale</h2>
         <p>
-          The 3Three-N-One blueprint embraces Flutter UI kits, Firebase
-          Authentication, Firestore, and Cloud Functions to deliver consistent
-          experiences across Android, iOS, and the web. Security controls map to
-          the OPS CyberSec Core framework with end-to-end encryption, MFA, and
-          observability baked in from day zero.
+          Deliver consistent experiences across Android, iOS, and the web. Security controls map to CyberSec Core framework
+          with end-to-end encryption, MFA, and observability baked in from day zero.
         </p>
         <div class="role-overview">
           <article>
             <h3>Experience Layer</h3>
             <ul class="feature-list">
-              <li>Flutter UI packages for native &amp; web deployment</li>
+              <li>UI packages for native &amp; web deployment</li>
               <li>PWA-ready responsive grid and offline primitives</li>
               <li>Accessibility aligned to WCAG 2.1 AA</li>
             </ul>
           </article>
           <article>
-            <h3>Intelligence &amp; Data</h3>
-            <ul class="feature-list">
-              <li>Firebase Firestore inventory &amp; pricing streams</li>
-              <li>Cloud Functions for automation &amp; AI-driven insights</li>
-              <li>Audit trails satisfying PCI DSS Requirement 10</li>
-            </ul>
-          </article>
-          <article>
             <h3>Security &amp; Governance</h3>
             <ul class="feature-list">
-              <li>Role-based IAM and least-privilege enforcement</li>
-              <li>Encryption in transit &amp; at rest with AES-256</li>
-              <li>Continuous monitoring, anomaly detection, and IR playbooks</li>
+              <li>Role-based IAM enforcement</li>
+              <li>Encryption in transit &amp; at rest</li>
+              <li>Continuous monitoring, anomaly detection</li>
             </ul>
           </article>
         </div>
@@ -188,12 +173,10 @@
       <section class="cta-banner">
         <h2>Launch a future-ready commerce ecosystem</h2>
         <p>
-          Deploy once, serve everywhere: orchestrate consumer-grade experiences,
-          resilient logistics, and compliance automation under a single DevSecOps
-          loop.
+          Deploy once, serve everywhere: orchestrate consumer-grade experiences and resilient logistics.
         </p>
         <div class="button-group">
-          <a class="button primary" href="it-ops.html">Review implementation guide</a>
+          <a class="button primary" href="../logistics-admin.html">Review logistics playbooks</a>
           <a class="button secondary" href="consumer.html">Preview consumer UI</a>
         </div>
       </section>
@@ -201,16 +184,10 @@
 
     <footer>
       <div class="footer-content">
-        <p>
-          © 2024 3Three-N-One Commerce Cloud. Engineered for regulatory-grade
-          security, adaptive UX, and AI-driven operations.
-        </p>
-        <p>
-          Need custom integrations or localization? Contact the IT operations
-          team via the <a href="it-ops.html">command center</a>.
-        </p>
+        <p>© 2024 Marxia Commerce Cloud. Engineered for secure, adaptive, and intelligent operations.</p>
+        <p>All escalations are handled within the app experience.</p>
       </div>
     </footer>
-    <script src="scripts.js" defer></script>
+    <script src="../scripts.js" defer></script>
   </body>
 </html>

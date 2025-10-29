@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>IT Operations Command Center | 3Three-N-One Commerce Cloud</title>
+    <title>IT Operations Command Center | Marxia Commerce Cloud</title>
     <meta
       name="description"
-      content="Monitor and orchestrate platform health, releases, and compliance across every 3Three-N-One landing experience."
+      content="Monitor and orchestrate platform health, releases, and governance across every Marxia landing experience."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,8 +20,8 @@
     <header>
       <div class="navbar" role="navigation" aria-label="Primary">
         <nav>
-          <a href="index.html">Overview</a>
-          <a href="consumer.html">End Consumer</a>
+          <a href="Apps/overview.html">Overview</a>
+          <a href="Apps/consumer.html">Consumer App</a>
           <div class="nav-cluster" data-nav-cluster>
             <button
               class="nav-trigger"
@@ -80,13 +80,12 @@
           <span class="tag">IT Command Center</span>
           <h2>Full-spectrum visibility with authority to act.</h2>
           <p>
-            The IT landing space provides holistic oversight across consumer,
-            business, logistics, and driver experiences. Govern releases, secure
-            data, and orchestrate updates across Flutter apps and web portals.
+            The IT landing space provides holistic oversight across consumer, business, logistics, and driver experiences.
+            Govern releases, secure data, and orchestrate updates across native apps and web portals.
           </p>
           <div class="button-group">
             <a class="button primary" href="#mission">Review mission control</a>
-            <a class="button secondary" href="index.html">Return to overview</a>
+            <a class="button secondary" href="Apps/overview.html">Return to overview</a>
           </div>
         </div>
       </section>
@@ -97,9 +96,9 @@
           <article>
             <h3>DevSecOps Automation</h3>
             <ul class="feature-list">
-              <li>GitHub Actions pipelines for Flutter, Firebase, and web deploys</li>
-              <li>Infrastructure as code for Cloudflare, Netlify, and Firestore</li>
-              <li>Automated compliance checks against OPS CyberSec Core</li>
+              <li>GitHub Actions pipelines for web and mobile deploys</li>
+              <li>Infrastructure as code for Cloudflare, Netlify, and data services</li>
+              <li>Automated compliance checks against CyberSec Core</li>
             </ul>
           </article>
           <article>
@@ -114,7 +113,7 @@
             <h3>Experience Monitoring</h3>
             <ul class="feature-list">
               <li>Lighthouse CI, Core Web Vitals, and TTFB tracking</li>
-              <li>Crash analytics for Flutter apps with alerting</li>
+              <li>Crash analytics for mobile apps with alerting</li>
               <li>Feedback loops integrating consumer, admin, and driver insights</li>
             </ul>
           </article>
@@ -124,15 +123,14 @@
       <section class="section" id="governance">
         <h2>Governance, compliance, and innovation</h2>
         <p>
-          IT owns the master playbooks that align legal, security, and business
-          stakeholders. All landing pages inherit its observability hooks and
-          change-management workflows.
+          IT owns the master playbooks that align legal, security, and business stakeholders. All landing pages inherit its
+          observability hooks and change-management workflows.
         </p>
         <div class="grid cards-3">
           <article class="card">
             <h3>Compliance Control</h3>
             <ul class="feature-list">
-              <li>Policy mappings for NIST CSF, PCI DSS 4.0, GDPR, and CCPA</li>
+              <li>Policy mappings to the CyberSec Core framework</li>
               <li>Security headers, CSP, HSTS, and secure cookies enforced</li>
               <li>Retention schedules for logs, data, and backups</li>
             </ul>
@@ -150,18 +148,17 @@
             <ul class="feature-list">
               <li>Cross-role war rooms for release planning and incident drills</li>
               <li>Knowledge base documenting integrations and runbooks</li>
-              <li>Secure communications across Slack, email, and in-app alerts</li>
+              <li>Secure communications across in-app alerts and approved channels</li>
             </ul>
           </article>
         </div>
       </section>
 
       <section class="cta-banner">
-        <h2>Lead the evolution of 3Three-N-One</h2>
+        <h2>Lead the evolution of Marxia</h2>
         <p>
-          From landing pages to production apps, IT orchestrates resilience,
-          compliance, and customer delight. Keep innovation flowing with
-          confidence.
+          From landing pages to production apps, IT orchestrates resilience, governance, and customer delight. Keep innovation
+          flowing with confidence.
         </p>
         <div class="button-group">
           <a class="button primary" href="business-admin.html">Coordinate with business</a>
@@ -173,10 +170,7 @@
     <footer>
       <div class="footer-content">
         <p>IT has full access to every workspace for monitoring and support.</p>
-        <p>
-          Need to update integrations or automate processes? Submit a request to
-          <a href="mailto:itops@3three-n-one.com">itops@3three-n-one.com</a>.
-        </p>
+        <p>All escalations are contained within Marxia to preserve audit trails.</p>
       </div>
     </footer>
     <script src="scripts.js" defer></script>
