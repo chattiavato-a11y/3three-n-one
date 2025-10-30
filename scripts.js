@@ -1,4 +1,4 @@
-const ready = () => {
+const initNavClusters = () => {
   const clusters = document.querySelectorAll('[data-nav-cluster]');
   if (!clusters.length) {
     return;
@@ -117,6 +117,99 @@ const ready = () => {
       });
     });
   });
+};
+
+const initProductCarousel = () => {
+  const carousel = document.querySelector('[data-carousel]');
+  if (!carousel) {
+    return;
+  }
+
+  const track = carousel.querySelector('[data-carousel-track]');
+  const prev = carousel.querySelector('[data-carousel-prev]');
+  const next = carousel.querySelector('[data-carousel-next]');
+
+  if (track && prev && next) {
+    const getGap = () => {
+      const style = window.getComputedStyle(track);
+      const gapValue = style.columnGap || style.gap || '0';
+      const parsed = parseFloat(gapValue);
+      return Number.isFinite(parsed) ? parsed : 0;
+    };
+
+    const getScrollAmount = () => {
+      const firstItem = track.querySelector('[data-product]');
+      if (!firstItem) {
+        return track.clientWidth;
+      }
+      const itemWidth = firstItem.getBoundingClientRect().width;
+      return itemWidth + getGap();
+    };
+
+    const updateButtons = () => {
+      const maxScrollLeft = track.scrollWidth - track.clientWidth - 1;
+      prev.disabled = track.scrollLeft <= 0;
+      next.disabled = track.scrollLeft >= maxScrollLeft;
+    };
+
+    const scrollByAmount = (direction) => {
+      const amount = getScrollAmount() * direction;
+      track.scrollBy({ left: amount, behavior: 'smooth' });
+    };
+
+    prev.addEventListener('click', () => {
+      scrollByAmount(-1);
+    });
+
+    next.addEventListener('click', () => {
+      scrollByAmount(1);
+    });
+
+    track.addEventListener('scroll', () => {
+      window.requestAnimationFrame(updateButtons);
+    });
+
+    window.addEventListener('resize', updateButtons);
+
+    updateButtons();
+  }
+
+  const productCards = carousel.querySelectorAll('[data-product]');
+  productCards.forEach((product) => {
+    const addButton = product.querySelector('[data-add]');
+    const removeButton = product.querySelector('[data-remove]');
+    const display = product.querySelector('[data-quantity-display]');
+
+    if (!addButton || !removeButton || !display) {
+      return;
+    }
+
+    let quantity = 0;
+
+    const updateDisplay = () => {
+      display.textContent = String(quantity);
+      removeButton.disabled = quantity === 0;
+    };
+
+    addButton.addEventListener('click', () => {
+      quantity += 1;
+      updateDisplay();
+    });
+
+    removeButton.addEventListener('click', () => {
+      if (quantity > 0) {
+        quantity -= 1;
+        updateDisplay();
+      }
+    });
+
+    updateDisplay();
+  });
+};
+
+const ready = () => {
+  initNavClusters();
+  initProductCarousel();
 };
 
 if (document.readyState === 'loading') {
