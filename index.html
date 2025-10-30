@@ -6,7 +6,7 @@
     <title>Marxia Commerce Cloud | Unified Overview</title>
     <meta
       name="description"
-      content="Explore the complete Marxia Commerce Cloud story across consumer journeys, business operations, and secure-scale logistics."
+      content="Explore the full Marxia Commerce Cloud story—consumer journeys, a curated product carousel, business operations, and secure-scale logistics—all in one landing page."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,8 +20,8 @@
     <header>
       <div class="navbar" role="navigation" aria-label="Primary">
         <nav>
-          <a href="index.html" aria-current="page">Overview</a>
-          <a href="marxia.html">Marxia</a>
+          <a href="#platform-overview" aria-current="page">Overview</a>
+          <a href="#product-carousel">Marxia</a>
           <div class="nav-cluster" data-nav-cluster>
             <button
               class="nav-trigger"
@@ -47,7 +47,7 @@
                     Business
                   </button>
                   <div class="nav-submenu" id="admin-business" role="menu" hidden>
-                    <a class="nav-submenu-link" href="login.html" role="menuitem">Business Ops</a>
+                    <a class="nav-submenu-link" href="#business-admin" role="menuitem">Business Console</a>
                   </div>
                 </div>
                 <div class="nav-menu-column">
@@ -61,12 +61,12 @@
                     Logistics
                   </button>
                   <div class="nav-submenu" id="admin-logistics" role="menu" hidden>
-                    <a class="nav-submenu-link" href="login.html" role="menuitem">Contractor</a>
-                    <a class="nav-submenu-link" href="login.html" role="menuitem">Business Ops</a>
+                    <a class="nav-submenu-link" href="#logistics-admin" role="menuitem">Logistics Control</a>
+                    <a class="nav-submenu-link" href="#driver-hub" role="menuitem">Driver Hub</a>
                   </div>
                 </div>
               </div>
-              <p class="nav-helper">All admin pathways direct to the secure login.</p>
+              <p class="nav-helper">All admin pathways direct to the secure login within Marxia.</p>
             </div>
           </div>
         </nav>
@@ -74,131 +74,222 @@
     </header>
 
     <main>
-      <section class="hero" id="overview-update">
-        <div>
-          <span class="tag">Marxia Platform Update</span>
-          <h2>The full platform story now lives on this unified overview.</h2>
-          <p>
-            Explore every detail of the Marxia Commerce Cloud—from stakeholder journeys to secure-scale operations—directly
-            within a single, cohesive experience. The consumer narrative, business pathways, and logistics orchestration now
-            align in one destination.
-          </p>
-          <div class="button-group">
-            <a class="button primary" href="marxia.html">Open the Marxia experience</a>
-            <a class="button secondary" href="#business-admin">Go to business console</a>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" aria-labelledby="updates-heading">
-        <h2 id="updates-heading">What moved?</h2>
-        <p>
-          The hero narrative, role-by-role landing journeys, secure scale breakdown, and launch call-to-action now appear
-          alongside the consumer experience so every stakeholder can see the full platform in context.
-        </p>
-        <div class="grid cards-3">
-          <article class="card">
-            <h3>Unified hero</h3>
-            <p>
-              The composable commerce hero anchors this page with the same messaging previously shown across separate landings.
-            </p>
-          </article>
-          <article class="card">
-            <h3>Role journeys</h3>
-            <p>
-              Business admin and logistics pathways sit beside the consumer journey details for a complete view.
-            </p>
-          </article>
-          <article class="card">
-            <h3>Secure scale</h3>
-            <p>
-              Platform security, governance, and launch calls-to-action are merged into the Consumer App ecosystem.
-            </p>
-          </article>
-        </div>
-      </section>
-
       <section class="hero" id="platform-overview">
         <div>
-          <span class="tag">Unified Ecommerce Operating System</span>
-          <h2>Composable commerce for every stakeholder.</h2>
-          <p>
-            Marxia delivers a secure, adaptable commerce ecosystem that delights consumers, empowers business owners, keeps
-            logistics synchronized, and equips teams to orchestrate continuous improvement across Android, iOS, and the web.
-          </p>
-          <div class="button-group">
-            <a class="button primary" href="#consumer-experience">Explore consumer journey</a>
-            <a class="button secondary" href="#business-admin">View business console</a>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="roles">
-        <h2>Role-tailored landing experiences</h2>
-        <p>
-          Each workspace is designed for its audience while sharing a common secure backbone, ensuring consistent governance and
-          user confidence.
-        </p>
-        <div class="grid cards-3">
-          <article class="card">
-            <h3>Consumer App</h3>
-            <p>
-              Discover curated inventories, receive adaptive recommendations, and stay in control of every order with responsive
-              support.
-            </p>
-            <ul class="feature-list">
-              <li>Immersive Android, iOS, and PWA experiences</li>
-              <li>Inventory and pricing visibility updated in real time</li>
-              <li>Secure wallets, MFA checkout, and proactive notifications</li>
-            </ul>
-            <div class="button-group" style="margin-top: 1.5rem">
-              <a class="button primary" href="#consumer-experience">Open consumer hub</a>
-            </div>
-          </article>
-          <article class="card">
-            <h3>Business Admin</h3>
-            <p>
-              Monitor purchases, sales inventory, tax positions, and orchestrate pricing or promotions with granular role-based
-              access control.
-            </p>
-            <ul class="feature-list">
-              <li>Inventory pipeline snapshots &amp; margin dashboards</li>
-              <li>Automated tax reporting and receivables insights</li>
-              <li>Approval workflows aligned to least-privilege policies</li>
-            </ul>
-            <div class="button-group" style="margin-top: 1.5rem">
-              <a class="button primary" href="#business-admin">Open business console</a>
-            </div>
-          </article>
-          <article class="card">
-            <h3>Logistics &amp; IT</h3>
-            <p>
-              Keep shipments, drivers, and digital operations in sync with intelligent routing, telemetry, and observability controls.
-            </p>
-            <ul class="feature-list">
-              <li>Driver dispatch tooling with compliance-ready checklists</li>
-              <li>Predictive route analytics and handoff transparency</li>
-              <li>Operations oversight with incident response governance</li>
-            </ul>
-            <div class="button-group" style="margin-top: 1.5rem">
-              <a class="button primary" href="#logistics-admin">Logistics admin</a>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section class="hero" id="consumer-experience">
-        <div>
-          <span class="tag">Consumer Experience</span>
+          <span class="tag">Marxia Consumer App</span>
           <h2>Shop, save, and stay informed everywhere.</h2>
           <p>
-            Designed with adaptive UI patterns, the consumer hub delivers a delightful, accessible storefront that syncs instantly.
-            Whether on Android, iOS, or the browser, customers enjoy frictionless discovery, checkout, and support.
+            Designed with adaptive UI patterns, the Marxia hub delivers a delightful, accessible storefront that syncs instantly.
+            Whether on Android, iOS, or the browser, customers enjoy frictionless discovery, checkout, and support fed directly
+            by business inventory and logistics orchestration.
           </p>
           <div class="button-group">
             <a class="button primary" href="#consumer-journeys">Explore journeys</a>
-            <a class="button secondary" href="#business-admin">See admin insights</a>
+            <a class="button secondary" href="#security">Review trust signals</a>
           </div>
+        </div>
+      </section>
+
+      <section class="section product-carousel" id="product-carousel" data-carousel>
+        <div class="carousel-header">
+          <div>
+            <span class="tag">Marxia Marketplace</span>
+            <h2>Discover the curated Marxia collection.</h2>
+            <p>
+              Ten featured products showcase adaptive merchandising—each with mindful tags, transparent pricing, and quick add or
+              remove controls for responsive baskets.
+            </p>
+          </div>
+          <div class="carousel-controls">
+            <button class="carousel-button" type="button" data-carousel-prev aria-label="View previous products">
+              <span aria-hidden="true">‹</span>
+            </button>
+            <button class="carousel-button" type="button" data-carousel-next aria-label="View next products">
+              <span aria-hidden="true">›</span>
+            </button>
+          </div>
+        </div>
+        <div class="carousel-track" role="list" data-carousel-track>
+          <article class="product-card" role="listitem" data-product>
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?auto=format&fit=crop&w=600&q=80" alt="Folded denim jackets stacked on a table" />
+              <span class="product-label">Eco Denim</span>
+            </div>
+            <div class="product-body">
+              <h3>Adaptive Denim Jacket</h3>
+              <p>Stretch fit with recycled fibers and temperature-balancing lining.</p>
+              <div class="product-footer">
+                <span class="product-price">$128</span>
+                <div class="product-quantity" data-quantity-controls>
+                  <button class="quantity-button" type="button" data-remove aria-label="Remove Adaptive Denim Jacket">− Remove</button>
+                  <span class="quantity-display" data-quantity-display aria-live="polite">0</span>
+                  <button class="quantity-button" type="button" data-add aria-label="Add Adaptive Denim Jacket">+ Add</button>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="product-card" role="listitem" data-product>
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1505740106531-4243f3831c78?auto=format&fit=crop&w=600&q=80" alt="Wireless headphones resting on a wooden surface" />
+              <span class="product-label">Focus Mode</span>
+            </div>
+            <div class="product-body">
+              <h3>QuietPulse Headphones</h3>
+              <p>Adaptive ANC with biometric tuning for mindful listening sessions.</p>
+              <div class="product-footer">
+                <span class="product-price">$249</span>
+                <div class="product-quantity" data-quantity-controls>
+                  <button class="quantity-button" type="button" data-remove aria-label="Remove QuietPulse Headphones">− Remove</button>
+                  <span class="quantity-display" data-quantity-display aria-live="polite">0</span>
+                  <button class="quantity-button" type="button" data-add aria-label="Add QuietPulse Headphones">+ Add</button>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="product-card" role="listitem" data-product>
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?auto=format&fit=crop&w=600&q=80" alt="A pair of running shoes on a neon-lit floor" />
+              <span class="product-label">Performance</span>
+            </div>
+            <div class="product-body">
+              <h3>PaceFlow Sneakers</h3>
+              <p>Energy-return midsole with breathable mesh for daily movement.</p>
+              <div class="product-footer">
+                <span class="product-price">$142</span>
+                <div class="product-quantity" data-quantity-controls>
+                  <button class="quantity-button" type="button" data-remove aria-label="Remove PaceFlow Sneakers">− Remove</button>
+                  <span class="quantity-display" data-quantity-display aria-live="polite">0</span>
+                  <button class="quantity-button" type="button" data-add aria-label="Add PaceFlow Sneakers">+ Add</button>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="product-card" role="listitem" data-product>
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=600&q=80" alt="A living room featuring a smart speaker on a wooden table" />
+              <span class="product-label">Smart Home</span>
+            </div>
+            <div class="product-body">
+              <h3>Horizon Smart Speaker</h3>
+              <p>Privacy-first assistant with ambient wellness lighting presets.</p>
+              <div class="product-footer">
+                <span class="product-price">$189</span>
+                <div class="product-quantity" data-quantity-controls>
+                  <button class="quantity-button" type="button" data-remove aria-label="Remove Horizon Smart Speaker">− Remove</button>
+                  <span class="quantity-display" data-quantity-display aria-live="polite">0</span>
+                  <button class="quantity-button" type="button" data-add aria-label="Add Horizon Smart Speaker">+ Add</button>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="product-card" role="listitem" data-product>
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1585386959984-a4155224a1ad?auto=format&fit=crop&w=600&q=80" alt="Reusable water bottle beside sliced citrus fruits" />
+              <span class="product-label">Wellness</span>
+            </div>
+            <div class="product-body">
+              <h3>HydraLoop Bottle</h3>
+              <p>Self-cleaning stainless steel with smart hydration reminders.</p>
+              <div class="product-footer">
+                <span class="product-price">$64</span>
+                <div class="product-quantity" data-quantity-controls>
+                  <button class="quantity-button" type="button" data-remove aria-label="Remove HydraLoop Bottle">− Remove</button>
+                  <span class="quantity-display" data-quantity-display aria-live="polite">0</span>
+                  <button class="quantity-button" type="button" data-add aria-label="Add HydraLoop Bottle">+ Add</button>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="product-card" role="listitem" data-product>
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1512495965-1f1c6f516902?auto=format&fit=crop&w=600&q=80" alt="A person typing on a sleek laptop" />
+              <span class="product-label">Creator Kit</span>
+            </div>
+            <div class="product-body">
+              <h3>LumenEdge Laptop</h3>
+              <p>Featherweight design with neural co-processor for AI workflows.</p>
+              <div class="product-footer">
+                <span class="product-price">$1,499</span>
+                <div class="product-quantity" data-quantity-controls>
+                  <button class="quantity-button" type="button" data-remove aria-label="Remove LumenEdge Laptop">− Remove</button>
+                  <span class="quantity-display" data-quantity-display aria-live="polite">0</span>
+                  <button class="quantity-button" type="button" data-add aria-label="Add LumenEdge Laptop">+ Add</button>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="product-card" role="listitem" data-product>
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?auto=format&fit=crop&w=600&q=80" alt="A smartwatch displaying health metrics" />
+              <span class="product-label">Vitals</span>
+            </div>
+            <div class="product-body">
+              <h3>PulseSync Watch</h3>
+              <p>Continuous wellness analytics with guided breathing prompts.</p>
+              <div class="product-footer">
+                <span class="product-price">$279</span>
+                <div class="product-quantity" data-quantity-controls>
+                  <button class="quantity-button" type="button" data-remove aria-label="Remove PulseSync Watch">− Remove</button>
+                  <span class="quantity-display" data-quantity-display aria-live="polite">0</span>
+                  <button class="quantity-button" type="button" data-add aria-label="Add PulseSync Watch">+ Add</button>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="product-card" role="listitem" data-product>
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1479839672679-a46483c0e7c8?auto=format&fit=crop&w=600&q=80" alt="A coffee brewing setup on a kitchen counter" />
+              <span class="product-label">Kitchen Lab</span>
+            </div>
+            <div class="product-body">
+              <h3>InfiniBrew System</h3>
+              <p>Precision pour-over device with flavor profiling micro-sensors.</p>
+              <div class="product-footer">
+                <span class="product-price">$215</span>
+                <div class="product-quantity" data-quantity-controls>
+                  <button class="quantity-button" type="button" data-remove aria-label="Remove InfiniBrew System">− Remove</button>
+                  <span class="quantity-display" data-quantity-display aria-live="polite">0</span>
+                  <button class="quantity-button" type="button" data-add aria-label="Add InfiniBrew System">+ Add</button>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="product-card" role="listitem" data-product>
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1596495577886-d920f1fb7238?auto=format&fit=crop&w=600&q=80" alt="A minimalist backpack leaning against a wall" />
+              <span class="product-label">Travel Light</span>
+            </div>
+            <div class="product-body">
+              <h3>OrbitFlex Pack</h3>
+              <p>Expandable carry system with anti-theft zippers and device sleeves.</p>
+              <div class="product-footer">
+                <span class="product-price">$174</span>
+                <div class="product-quantity" data-quantity-controls>
+                  <button class="quantity-button" type="button" data-remove aria-label="Remove OrbitFlex Pack">− Remove</button>
+                  <span class="quantity-display" data-quantity-display aria-live="polite">0</span>
+                  <button class="quantity-button" type="button" data-add aria-label="Add OrbitFlex Pack">+ Add</button>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="product-card" role="listitem" data-product>
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?auto=format&fit=crop&w=600&q=80" alt="Stylized living room with ambient lighting" />
+              <span class="product-label">Atmosphere</span>
+            </div>
+            <div class="product-body">
+              <h3>GlowWeave Panels</h3>
+              <p>Modular wall lighting that adapts color temperature by circadian cues.</p>
+              <div class="product-footer">
+                <span class="product-price">$299</span>
+                <div class="product-quantity" data-quantity-controls>
+                  <button class="quantity-button" type="button" data-remove aria-label="Remove GlowWeave Panels">− Remove</button>
+                  <span class="quantity-display" data-quantity-display aria-live="polite">0</span>
+                  <button class="quantity-button" type="button" data-add aria-label="Add GlowWeave Panels">+ Add</button>
+                </div>
+              </div>
+            </div>
+          </article>
         </div>
       </section>
 
@@ -267,28 +358,40 @@
       </section>
 
       <section class="section" id="secure-scale">
-        <h2>Built for Secure scale</h2>
+        <h2>Powered by secure-scale operations</h2>
         <p>
-          Deliver consistent experiences across Android, iOS, and the web. Security controls map to CyberSec Core framework with
-          end-to-end encryption, MFA, and observability baked in from day zero.
+          The consumer promise is fulfilled through business governance and logistics execution. Real-time data flows connect
+          product availability, tax compliance, and delivery orchestration into one responsive storefront.
         </p>
         <div class="role-overview">
           <article>
-            <h3>Experience Layer</h3>
+            <h3>Inventory &amp; Pricing</h3>
             <ul class="feature-list">
-              <li>UI packages for native &amp; web deployment</li>
-              <li>PWA-ready responsive grid and offline primitives</li>
-              <li>Accessibility aligned to WCAG 2.1 AA</li>
+              <li>Business owners push synchronized inventory to storefronts</li>
+              <li>Dynamic pricing campaigns driven by admin approval chains</li>
+              <li>Localized catalog support across currencies and regions</li>
             </ul>
           </article>
           <article>
-            <h3>Security &amp; Governance</h3>
+            <h3>Logistics Visibility</h3>
             <ul class="feature-list">
-              <li>Role-based IAM enforcement</li>
-              <li>Encryption in transit &amp; at rest</li>
-              <li>Continuous monitoring, anomaly detection</li>
+              <li>Driver telemetry feeds real-time delivery windows</li>
+              <li>Incident response protocols keep customers informed</li>
+              <li>Carbon-aware routing data displayed for conscious choices</li>
             </ul>
           </article>
+        </div>
+      </section>
+
+      <section class="cta-banner" id="consumer-cta">
+        <h2>Experience Marxia your way</h2>
+        <p>
+          Dive into curated collections, build mindful wishlists, and follow every order with transparency that spans business and
+          logistics teams.
+        </p>
+        <div class="button-group">
+          <a class="button primary" href="#platform-overview">Start exploring</a>
+          <a class="button secondary" href="#product-carousel">View featured products</a>
         </div>
       </section>
 
@@ -302,7 +405,7 @@
           </p>
           <div class="button-group">
             <a class="button primary" href="#business-governance">Coordinate next steps</a>
-            <a class="button secondary" href="#overview-update">Return to top</a>
+            <a class="button secondary" href="#platform-overview">Return to top</a>
           </div>
         </div>
       </section>
@@ -314,7 +417,7 @@
         </p>
         <div class="button-group">
           <a class="button primary" href="#logistics-admin">Coordinate logistics</a>
-          <a class="button secondary" href="#overview-update">Return to overview</a>
+          <a class="button secondary" href="#platform-overview">Return to overview</a>
         </div>
       </section>
 
@@ -405,7 +508,7 @@
         </p>
         <div class="button-group">
           <a class="button primary" href="#driver-hub">Empower drivers</a>
-          <a class="button secondary" href="#overview-update">Return to overview</a>
+          <a class="button secondary" href="#platform-overview">Return to overview</a>
         </div>
       </section>
 
@@ -495,7 +598,7 @@
         </p>
         <div class="button-group">
           <a class="button primary" href="#logistics-admin">Sync with logistics</a>
-          <a class="button secondary" href="#overview-update">Return to overview</a>
+          <a class="button secondary" href="#platform-overview">Return to overview</a>
         </div>
       </section>
 
@@ -506,7 +609,7 @@
         </p>
         <div class="button-group">
           <a class="button primary" href="#logistics-admin">Review logistics playbooks</a>
-          <a class="button secondary" href="#consumer-experience">Preview consumer UI</a>
+          <a class="button secondary" href="#consumer-journeys">Preview consumer UI</a>
         </div>
       </section>
 
