@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Consumer Product Gallery | Marxia Commerce Cloud</title>
+    <meta
+      name="description"
+      content="Explore the dedicated Marxia product gallery for end consumers with immersive imagery optimised for Android, iOS, and desktop."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="navbar" role="navigation" aria-label="Primary">
+        <nav>
+          <a href="index.html">Overview</a>
+          <a href="marxia.html">Marxia</a>
+          <a href="consumer-gallery.html" aria-current="page">Consumer Gallery</a>
+          <div class="nav-cluster" data-nav-cluster>
+            <button
+              class="nav-trigger"
+              type="button"
+              data-menu-trigger
+              aria-expanded="false"
+              aria-controls="admin-menu"
+              aria-haspopup="true"
+            >
+              Admin
+              <span class="nav-trigger-icon" aria-hidden="true"></span>
+            </button>
+            <div class="nav-menu-panel" id="admin-menu" role="menu" hidden data-menu-panel>
+              <div class="nav-menu-columns">
+                <div class="nav-menu-column">
+                  <button
+                    class="nav-subtrigger"
+                    type="button"
+                    data-submenu-trigger
+                    aria-expanded="false"
+                    aria-controls="admin-business"
+                  >
+                    Business
+                  </button>
+                  <div class="nav-submenu" id="admin-business" role="menu" hidden>
+                    <a class="nav-submenu-link" href="index.html#business-admin" role="menuitem">Business Console</a>
+                  </div>
+                </div>
+                <div class="nav-menu-column">
+                  <button
+                    class="nav-subtrigger"
+                    type="button"
+                    data-submenu-trigger
+                    aria-expanded="false"
+                    aria-controls="admin-logistics"
+                  >
+                    Logistics
+                  </button>
+                  <div class="nav-submenu" id="admin-logistics" role="menu" hidden>
+                    <a class="nav-submenu-link" href="index.html#logistics-admin" role="menuitem">Logistics Control</a>
+                    <a class="nav-submenu-link" href="index.html#driver-hub" role="menuitem">Driver Hub</a>
+                  </div>
+                </div>
+              </div>
+              <p class="nav-helper">All admin pathways direct to the secure login within Marxia.</p>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero gallery-hero" id="gallery-overview">
+        <div class="gallery-hero-content">
+          <span class="tag">End Consumer Showcase</span>
+          <h1>Immersive product visuals that travel with your shoppers.</h1>
+          <p>
+            The Marxia Product Gallery separates rich media into a focused destination so customers can evaluate textures,
+            finishes, and ambient settings without interface distractions. Optimisations for Android, iOS, and desktop keep
+            imagery crisp and responsive everywhere.
+          </p>
+          <ul class="gallery-device-badges" aria-label="Supported devices">
+            <li><span aria-hidden="true">📱</span> Android</li>
+            <li><span aria-hidden="true">📱</span> iOS</li>
+            <li><span aria-hidden="true">💻</span> Desktop &amp; Web</li>
+          </ul>
+          <div class="button-group">
+            <a class="button primary" href="#immersive-gallery">Browse featured images</a>
+            <a class="button secondary" href="#product-carousel">Jump to product carousel</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section gallery-intro" id="immersive-gallery">
+        <h2>Immersive gallery moments</h2>
+        <p>
+          Each gallery card pairs a hero image with mindful annotations so consumers understand materials, sustainability
+          signals, and availability indicators sourced from Marxia business and logistics data.
+        </p>
+        <div class="product-gallery-grid" role="list">
+          <article class="product-gallery-card" role="listitem">
+            <figure>
+              <img
+                src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=900&q=80"
+                alt="A minimalist sofa with warm lighting"
+              />
+              <figcaption>
+                <div class="gallery-card-body">
+                  <h3>Atmos Lounge Suite</h3>
+                  <p>Organic cotton upholstery with modular panels and recycled aluminum legs.</p>
+                  <span class="gallery-availability in-stock">In stock • Ready to ship</span>
+                </div>
+              </figcaption>
+            </figure>
+          </article>
+          <article class="product-gallery-card" role="listitem">
+            <figure>
+              <img
+                src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=80"
+                alt="A pair of running shoes placed on a bright surface"
+              />
+              <figcaption>
+                <div class="gallery-card-body">
+                  <h3>PaceFlow Sneakers</h3>
+                  <p>Adaptive cushioning with reflective fibers tuned for night runners.</p>
+                  <span class="gallery-availability low-stock">Low stock • 12 pairs left</span>
+                </div>
+              </figcaption>
+            </figure>
+          </article>
+          <article class="product-gallery-card" role="listitem">
+            <figure>
+              <img
+                src="https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?auto=format&fit=crop&w=900&q=80"
+                alt="Wireless headphones hovering above a display stand"
+              />
+              <figcaption>
+                <div class="gallery-card-body">
+                  <h3>QuietPulse Headphones</h3>
+                  <p>Biometric audio calibration with adaptive noise balancing for mindful focus.</p>
+                  <span class="gallery-availability pre-order">Pre-order • Ships in 2 weeks</span>
+                </div>
+              </figcaption>
+            </figure>
+          </article>
+          <article class="product-gallery-card" role="listitem">
+            <figure>
+              <img
+                src="https://images.unsplash.com/photo-1574189023738-b4a72c78d910?auto=format&fit=crop&w=900&q=80"
+                alt="A smartwatch displaying health metrics on a wrist"
+              />
+              <figcaption>
+                <div class="gallery-card-body">
+                  <h3>PulseSync Watch</h3>
+                  <p>Continuous vitals tracking with privacy-first data storage and alerts.</p>
+                  <span class="gallery-availability in-stock">In stock • Same-day dispatch</span>
+                </div>
+              </figcaption>
+            </figure>
+          </article>
+          <article class="product-gallery-card" role="listitem">
+            <figure>
+              <img
+                src="https://images.unsplash.com/photo-1598030388074-61174cd3e94f?auto=format&fit=crop&w=900&q=80"
+                alt="A modern kitchen countertop with a coffee brewing system"
+              />
+              <figcaption>
+                <div class="gallery-card-body">
+                  <h3>InfiniBrew Lab</h3>
+                  <p>Precision pour-over automation with roast-specific infusion profiles.</p>
+                  <span class="gallery-availability reserved">Reserved • Notify me</span>
+                </div>
+              </figcaption>
+            </figure>
+          </article>
+          <article class="product-gallery-card" role="listitem">
+            <figure>
+              <img
+                src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80"
+                alt="A laptop on a desk with ambient lighting"
+              />
+              <figcaption>
+                <div class="gallery-card-body">
+                  <h3>LumenEdge Creator</h3>
+                  <p>Lightweight neural co-processor laptop delivering AI acceleration on the go.</p>
+                  <span class="gallery-availability made-to-order">Made to order • Ships in 5 days</span>
+                </div>
+              </figcaption>
+            </figure>
+          </article>
+        </div>
+      </section>
+
+      <section class="section product-carousel" id="product-carousel" data-carousel>
+        <div class="carousel-header">
+          <div>
+            <span class="tag">Marxia Marketplace</span>
+            <h2>Discover the curated Marxia collection.</h2>
+            <p>
+              Ten featured products showcase adaptive merchandising—each with mindful tags, transparent pricing, and quick add or
+              remove controls for responsive baskets.
+            </p>
+          </div>
+          <div class="carousel-controls">
+            <button class="carousel-button" type="button" data-carousel-prev aria-label="View previous products">
+              <span aria-hidden="true">‹</span>
+            </button>
+            <button class="carousel-button" type="button" data-carousel-next aria-label="View next products">
+              <span aria-hidden="true">›</span>
+            </button>
+          </div>
+        </div>
+        <div class="carousel-track" role="list" data-carousel-track>
+          <article class="product-card" role="listitem" data-product>
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?auto=format&fit=crop&w=600&q=80" alt="Folded denim jackets stacked on a table" />
+              <span class="product-label">Eco Denim</span>
+            </div>
+            <div class="product-body">
+              <h3>Adaptive Denim Jacket</h3>
+              <p>Stretch fit with recycled fibers and temperature-balancing lining.</p>
+              <div class="product-footer">
+                <span class="product-price">$128</span>
+                <div class="product-quantity" data-quantity-controls>
+                  <button class="quantity-button" type="button" data-remove aria-label="Remove Adaptive Denim Jacket">− Remove</button>
+                  <span class="quantity-display" data-quantity-display aria-live="polite">0</span>
+                  <button class="quantity-button" type="button" data-add aria-label="Add Adaptive Denim Jacket">+ Add</button>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="product-card" role="listitem" data-product>
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1505740106531-4243f3831c78?auto=format&fit=crop&w=600&q=80" alt="Wireless headphones resting on a wooden surface" />
+              <span class="product-label">Focus Mode</span>
+            </div>
+            <div class="product-body">
+              <h3>QuietPulse Headphones</h3>
+              <p>Adaptive ANC with biometric tuning for mindful listening sessions.</p>
+              <div class="product-footer">
+                <span class="product-price">$249</span>
+                <div class="product-quantity" data-quantity-controls>
+                  <button class="quantity-button" type="button" data-remove aria-label="Remove QuietPulse Headphones">− Remove</button>
+                  <span class="quantity-display" data-quantity-display aria-live="polite">0</span>
+                  <button class="quantity-button" type="button" data-add aria-label="Add QuietPulse Headphones">+ Add</button>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="product-card" role="listitem" data-product>
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?auto=format&fit=crop&w=600&q=80" alt="A pair of running shoes on a neon-lit floor" />
+              <span class="product-label">Performance</span>
+            </div>
+            <div class="product-body">
+              <h3>PaceFlow Sneakers</h3>
+              <p>Energy-return midsole with breathable mesh for daily movement.</p>
+              <div class="product-footer">
+                <span class="product-price">$142</span>
+                <div class="product-quantity" data-quantity-controls>
+                  <button class="quantity-button" type="button" data-remove aria-label="Remove PaceFlow Sneakers">− Remove</button>
+                  <span class="quantity-display" data-quantity-display aria-live="polite">0</span>
+                  <button class="quantity-button" type="button" data-add aria-label="Add PaceFlow Sneakers">+ Add</button>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="product-card" role="listitem" data-product>
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=600&q=80" alt="A living room featuring a smart speaker on a wooden table" />
+              <span class="product-label">Smart Home</span>
+            </div>
+            <div class="product-body">
+              <h3>Horizon Smart Speaker</h3>
+              <p>Privacy-first assistant with ambient wellness lighting presets.</p>
+              <div class="product-footer">
+                <span class="product-price">$189</span>
+                <div class="product-quantity" data-quantity-controls>
+                  <button class="quantity-button" type="button" data-remove aria-label="Remove Horizon Smart Speaker">− Remove</button>
+                  <span class="quantity-display" data-quantity-display aria-live="polite">0</span>
+                  <button class="quantity-button" type="button" data-add aria-label="Add Horizon Smart Speaker">+ Add</button>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="product-card" role="listitem" data-product>
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1585386959984-a4155224a1ad?auto=format&fit=crop&w=600&q=80" alt="Reusable water bottle beside sliced citrus fruits" />
+              <span class="product-label">Wellness</span>
+            </div>
+            <div class="product-body">
+              <h3>HydraLoop Bottle</h3>
+              <p>Self-cleaning stainless steel with smart hydration reminders.</p>
+              <div class="product-footer">
+                <span class="product-price">$64</span>
+                <div class="product-quantity" data-quantity-controls>
+                  <button class="quantity-button" type="button" data-remove aria-label="Remove HydraLoop Bottle">− Remove</button>
+                  <span class="quantity-display" data-quantity-display aria-live="polite">0</span>
+                  <button class="quantity-button" type="button" data-add aria-label="Add HydraLoop Bottle">+ Add</button>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="product-card" role="listitem" data-product>
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1512495965-1f1c6f516902?auto=format&fit=crop&w=600&q=80" alt="A person typing on a sleek laptop" />
+              <span class="product-label">Creator Kit</span>
+            </div>
+            <div class="product-body">
+              <h3>LumenEdge Laptop</h3>
+              <p>Featherweight design with neural co-processor for AI workflows.</p>
+              <div class="product-footer">
+                <span class="product-price">$1,499</span>
+                <div class="product-quantity" data-quantity-controls>
+                  <button class="quantity-button" type="button" data-remove aria-label="Remove LumenEdge Laptop">− Remove</button>
+                  <span class="quantity-display" data-quantity-display aria-live="polite">0</span>
+                  <button class="quantity-button" type="button" data-add aria-label="Add LumenEdge Laptop">+ Add</button>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="product-card" role="listitem" data-product>
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?auto=format&fit=crop&w=600&q=80" alt="A smartwatch displaying health metrics" />
+              <span class="product-label">Vitals</span>
+            </div>
+            <div class="product-body">
+              <h3>PulseSync Watch</h3>
+              <p>Continuous wellness analytics with guided breathing prompts.</p>
+              <div class="product-footer">
+                <span class="product-price">$279</span>
+                <div class="product-quantity" data-quantity-controls>
+                  <button class="quantity-button" type="button" data-remove aria-label="Remove PulseSync Watch">− Remove</button>
+                  <span class="quantity-display" data-quantity-display aria-live="polite">0</span>
+                  <button class="quantity-button" type="button" data-add aria-label="Add PulseSync Watch">+ Add</button>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="product-card" role="listitem" data-product>
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1479839672679-a46483c0e7c8?auto=format&fit=crop&w=600&q=80" alt="A coffee brewing setup on a kitchen counter" />
+              <span class="product-label">Kitchen Lab</span>
+            </div>
+            <div class="product-body">
+              <h3>InfiniBrew System</h3>
+              <p>Precision pour-over device with flavor profiling micro-sensors.</p>
+              <div class="product-footer">
+                <span class="product-price">$215</span>
+                <div class="product-quantity" data-quantity-controls>
+                  <button class="quantity-button" type="button" data-remove aria-label="Remove InfiniBrew System">− Remove</button>
+                  <span class="quantity-display" data-quantity-display aria-live="polite">0</span>
+                  <button class="quantity-button" type="button" data-add aria-label="Add InfiniBrew System">+ Add</button>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="product-card" role="listitem" data-product>
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1596495577886-d920f1fb7238?auto=format&fit=crop&w=600&q=80" alt="A minimalist backpack leaning against a wall" />
+              <span class="product-label">Travel Light</span>
+            </div>
+            <div class="product-body">
+              <h3>OrbitFlex Pack</h3>
+              <p>Expandable carry system with anti-theft zippers and device sleeves.</p>
+              <div class="product-footer">
+                <span class="product-price">$174</span>
+                <div class="product-quantity" data-quantity-controls>
+                  <button class="quantity-button" type="button" data-remove aria-label="Remove OrbitFlex Pack">− Remove</button>
+                  <span class="quantity-display" data-quantity-display aria-live="polite">0</span>
+                  <button class="quantity-button" type="button" data-add aria-label="Add OrbitFlex Pack">+ Add</button>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="product-card" role="listitem" data-product>
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?auto=format&fit=crop&w=600&q=80" alt="Stylized living room with ambient lighting" />
+              <span class="product-label">Atmosphere</span>
+            </div>
+            <div class="product-body">
+              <h3>GlowWeave Panels</h3>
+              <p>Modular wall lighting that adapts color temperature by circadian cues.</p>
+              <div class="product-footer">
+                <span class="product-price">$299</span>
+                <div class="product-quantity" data-quantity-controls>
+                  <button class="quantity-button" type="button" data-remove aria-label="Remove GlowWeave Panels">− Remove</button>
+                  <span class="quantity-display" data-quantity-display aria-live="polite">0</span>
+                  <button class="quantity-button" type="button" data-add aria-label="Add GlowWeave Panels">+ Add</button>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section gallery-roles" id="gallery-roles">
+        <h2>Aligned for every Marxia role</h2>
+        <p>
+          The gallery keeps consumers inspired while ensuring business admins, logistics teams, and independent contractors
+          stay synced on inventory readiness and delivery expectations.
+        </p>
+        <div class="role-overview">
+          <article>
+            <h3>Business Admin</h3>
+            <ul class="feature-list">
+              <li>Push curated assets directly from the inventory catalog</li>
+              <li>Mark compliance-ready SKUs with sustainability callouts</li>
+              <li>Feed price and tax updates into the gallery in real time</li>
+            </ul>
+          </article>
+          <article>
+            <h3>Logistics Admin</h3>
+            <ul class="feature-list">
+              <li>Highlight delivery windows and regional availability badges</li>
+              <li>Surface back-order workflows before customers add to cart</li>
+              <li>Sync gallery notifications with warehouse routing rules</li>
+            </ul>
+          </article>
+          <article>
+            <h3>Independent Contractors</h3>
+            <ul class="feature-list">
+              <li>View handling notes embedded within each gallery card</li>
+              <li>Plan pick-ups with real-time weight and dimension metadata</li>
+              <li>Access quick links to route assignments after confirmation</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="cta-banner">
+        <h2>Ready to launch the Marxia commerce journey?</h2>
+        <p>
+          Continue exploring products, sync with admin dashboards, and stay aligned with logistics to deliver delight on every
+          device.
+        </p>
+        <div class="button-group">
+          <a class="button primary" href="marxia.html#product-carousel">Return to consumer flow</a>
+          <a class="button tertiary" href="index.html#platform-overview">Back to unified overview</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <p>© 2024 Marxia Commerce Cloud. Designed for secure, adaptive, and human-centered shopping.</p>
+        <p>Need assistance? Use the in-app concierge for round-the-clock support.</p>
+      </div>
+    </footer>
+    <script src="scripts.js" defer></script>
+  </body>
+</html>
